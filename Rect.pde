@@ -14,12 +14,12 @@ class Rect {
 
   void move() {
     x += xSpeed;
-    if (x < 0 || x > width) {
+    if (x < 0 || x > width-20) {
       xSpeed *= -1;
     }
 
     y += ySpeed;
-    if (y < 0 || y > height) {
+    if (y < 0 || y > height-20) {
       ySpeed *= -1;
     }
   }
